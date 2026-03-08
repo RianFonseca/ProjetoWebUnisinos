@@ -1,0 +1,228 @@
+.perfil-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+}
+
+.perfil-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil-photo-card {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 32px;
+    text-align: center;
+}
+
+.perfil-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin: 0 auto 16px;
+    border: 4px solid var(--primary-bg);
+}
+
+.perfil-photo-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.perfil-photo-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.perfil-quick-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.perfil-stat {
+    background: var(--bg-input);
+    border-radius: var(--border-radius-sm);
+    padding: 12px;
+    text-align: center;
+}
+
+.perfil-stat strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.perfil-stat span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.perfil-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil-tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--bg-input);
+    padding: 4px;
+    border-radius: var(--border-radius-sm);
+}
+
+.perfil-tab {
+    flex: 1;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.perfil-tab:hover {
+    color: var(--primary);
+}
+
+.perfil-tab.active {
+    background: var(--bg-card);
+    color: var(--primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.perfil-tab-content {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 28px;
+}
+
+.emergency-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.emergency-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-input);
+    transition: var(--transition);
+}
+
+.emergency-card:hover {
+    background: var(--primary-bg);
+}
+
+.emergency-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--danger), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.emergency-icon .bi {
+    font-size: 1.2rem;
+}
+
+.emergency-info {
+    flex: 1;
+}
+
+.emergency-info h4 {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.emergency-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.emergency-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: var(--bg-input);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.tag .tag-remove {
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.tag .tag-remove:hover {
+    opacity: 1;
+    color: var(--danger);
+}
+
+.tag-allergy {
+    background: rgba(214, 48, 49, 0.1);
+    color: var(--danger);
+}
+
+.tag-medication {
+    background: rgba(9, 132, 227, 0.1);
+    color: var(--secondary);
+}
+
+.tag-condition {
+    background: rgba(253, 203, 110, 0.2);
+    color: #e17055;
+}
+
+@media (max-width: 1024px) {
+    .perfil-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfil-tabs {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil-quick-stats {
+        grid-template-columns: 1fr;
+    }
+}

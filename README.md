@@ -38,7 +38,15 @@ Depois acesse [http://localhost:9090](http://localhost:9090).
 ProjetoWeb/
 ├── index.html
 ├── css/
-│   └── style.css
+│   ├── base.css
+│   ├── layout.css
+│   ├── componentes.css
+│   ├── auth.css
+│   ├── home.css
+│   ├── agendamentos.css
+│   ├── diario.css
+│   ├── profissionais.css
+│   └── perfil.css
 └── js/
     ├── app.js
     ├── auth.js
